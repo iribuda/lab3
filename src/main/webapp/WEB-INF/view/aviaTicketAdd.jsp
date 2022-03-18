@@ -13,7 +13,7 @@
 
 <h1>New Avia Ticket</h1>
 
-<form:form action="" modelAttribute="aviaTicket">
+<form:form action="save" modelAttribute="aviaTicket">
 
     <form:hidden path="id"/>
 

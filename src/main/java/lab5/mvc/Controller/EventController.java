@@ -34,7 +34,7 @@ public class EventController {
         return "eventAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("event") @Valid final Event event,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

@@ -35,7 +35,7 @@ public class AviaTicketController {
         return "aviaTicketAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("aviaTicket") @Valid final AviaTicket aviaTicket,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

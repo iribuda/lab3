@@ -13,7 +13,7 @@
 
 <h1>New Order</h1>
 
-<form:form action="" modelAttribute="order">
+<form:form action="save" modelAttribute="order">
 
     <form:hidden path="id"/>
 

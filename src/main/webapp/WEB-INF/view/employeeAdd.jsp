@@ -14,7 +14,7 @@
 <h1>New Employee</h1>
 
 <%--@elvariable id="employee" type=""--%>
-<form:form action="" modelAttribute="employee">
+<form:form action="save" modelAttribute="employee">
 
     <form:hidden path="id"/>
 

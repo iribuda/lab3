@@ -7,13 +7,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add Category</title>
+    <title>Add Class Hotel</title>
 </head>
 <body>
 
-<h1>New Category</h1>
+<h1>New Class Hotel</h1>
 
-<form:form action="" modelAttribute="classHotel">
+<form:form action="save" modelAttribute="classHotel">
 
     <form:hidden path="id"/>
 

@@ -13,7 +13,7 @@
 
 <h1>New Position</h1>
 
-<form:form action="" modelAttribute="position">
+<form:form action="save" modelAttribute="position">
 
     <form:hidden path="id"/>
 

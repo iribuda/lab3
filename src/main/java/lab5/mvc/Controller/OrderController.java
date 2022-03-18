@@ -34,7 +34,7 @@ public class OrderController {
         return "orderAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("order") @Valid final Order order,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

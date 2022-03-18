@@ -34,7 +34,7 @@ public class RoomController {
         return "roomAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("room") @Valid final Room room,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

@@ -24,7 +24,7 @@ public class ClassHotelController {
     public String showAll(Model model){
         List<ClassHotel> classHotels = classHotelService.getAll();
         model.addAttribute("classHotels", classHotels);
-        return "ClassHotelsAll";
+        return "ClassHotelAll";
     }
 
     @GetMapping("/add")
@@ -34,7 +34,7 @@ public class ClassHotelController {
         return "classHotelAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("classHotel") @Valid final ClassHotel classHotel,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

@@ -35,7 +35,7 @@ public class CategoryController {
         return "categoryAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("category") @Valid final Category category,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

@@ -13,7 +13,7 @@
 
 <h1>New Program</h1>
 
-<form:form action="" modelAttribute="program">
+<form:form action="save" modelAttribute="program">
 
     <form:hidden path="id"/>
 

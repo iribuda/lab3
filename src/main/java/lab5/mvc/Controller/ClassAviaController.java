@@ -35,7 +35,7 @@ public class ClassAviaController {
         return "classAviaAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("classAvia") @Valid final ClassAvia classAvia,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

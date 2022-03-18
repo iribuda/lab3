@@ -34,7 +34,7 @@ public class TourController {
         return "tourAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("tour") @Valid final Tour tour,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

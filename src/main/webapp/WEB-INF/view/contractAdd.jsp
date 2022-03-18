@@ -13,7 +13,7 @@
 
 <h1>New Contract</h1>
 
-<form:form action="" modelAttribute="contract">
+<form:form action="save" modelAttribute="contract">
 
     <form:hidden path="id"/>
 

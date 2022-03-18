@@ -34,7 +34,7 @@ public class EventTicketController {
         return "eventTicketAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("eventTicket") @Valid final EventTicket eventTicket,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

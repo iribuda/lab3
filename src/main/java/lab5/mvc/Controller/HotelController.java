@@ -34,7 +34,7 @@ public class HotelController {
         return "hotelAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("hotel") @Valid final Hotel hotel,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

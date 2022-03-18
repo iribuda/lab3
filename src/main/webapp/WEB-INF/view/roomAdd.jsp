@@ -13,7 +13,7 @@
 
 <h1>New Room</h1>
 
-<form:form action="" modelAttribute="room">
+<form:form action="save" modelAttribute="room">
 
     <form:hidden path="id"/>
 

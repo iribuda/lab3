@@ -13,7 +13,7 @@
 
 <h1>New Category</h1>
 
-<form:form action="" modelAttribute="country">
+<form:form action="save" modelAttribute="country">
 
     <form:hidden path="id"/>
 

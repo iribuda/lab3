@@ -34,14 +34,14 @@ public class PositionController {
         return "positionAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("position") @Valid final Position position,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){
             return "positionAdd";
         }
         positionService.save(position);
-        return "redirect:/";
+        return "redirect:/positions/";
     }
 
     @GetMapping("/update")

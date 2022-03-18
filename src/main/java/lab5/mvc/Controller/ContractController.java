@@ -34,7 +34,7 @@ public class ContractController {
         return "contractAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("contract") @Valid final Contract contract,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

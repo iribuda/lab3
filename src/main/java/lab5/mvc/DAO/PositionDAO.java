@@ -36,7 +36,7 @@ public class PositionDAO implements DAO<Position>{
     @Transactional
     public void save(Position position){
         Session session = sessionFactory.getCurrentSession();
-        session.save(position);
+        session.saveOrUpdate(position);
     }
 
     @Override

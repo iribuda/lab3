@@ -34,7 +34,7 @@ public class ProgramController {
         return "programAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("program") @Valid final Program program,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

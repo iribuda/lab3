@@ -34,7 +34,7 @@ public class CountryController {
         return "countryAdd";
     }
 
-    @GetMapping("/save")
+    @RequestMapping("/save")
     public String save(@ModelAttribute("country") @Valid final Country country,
                        final BindingResult bindingResult){
         if(bindingResult.hasFieldErrors()){

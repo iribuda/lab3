@@ -13,7 +13,7 @@
 
 <h1>New Event Ticket</h1>
 
-<form:form action="" modelAttribute="eventTicket">
+<form:form action="save" modelAttribute="eventTicket">
 
     <form:hidden path="id"/>
 

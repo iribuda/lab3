@@ -13,7 +13,7 @@
 
 <h1>New Category</h1>
 
-<form:form action="" modelAttribute="classAvia">
+<form:form action="save" modelAttribute="classAvia">
 
     <form:hidden path="id"/>
 
